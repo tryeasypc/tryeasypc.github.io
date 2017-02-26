@@ -20,7 +20,16 @@
 </head>
 
 <body class="landing-page landing-page1">
-   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"776f61be2f60bcf617d7a2f0a","lid":"23139f1b7c"}) })</script>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+    <script>
+    function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"776f61be2f60bcf617d7a2f0a","lid":"23139f1b7c"}) })
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    };
+
+    </script>
+    
     <nav class="navbar navbar-transparent navbar-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -73,7 +82,7 @@
                             <p>EasyPC is here to help</p>
                         </div>
                         <div class="buttons">
-                            <button class="btn btn-fill btn-lg btn-primary">
+                            <button class="btn btn-fill btn-lg btn-primary" onclick="showMailingPopUp()" id="open-popup">
                                 <i class="fa fa-wrench"></i> BUILD YOUR PC NOW
                             </button>
                         </div>
@@ -241,7 +250,7 @@
                 </div>
                 <div class="info">
                     <h1>Start Building your PC now!</h1>
-                    <a href="#" class="btn btn-primary btn-lg btn-fill"><i class="fa fa-wrench"></i> BUILD MY PC</a>
+                    <button id="open-popup"class="btn btn-primary btn-lg btn-fill"><i class="fa fa-wrench"></i> BUILD MY PC</button>
                 </div>
             </div>
         </div>
