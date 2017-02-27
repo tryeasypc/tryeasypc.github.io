@@ -17,31 +17,21 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <!-- Facebook Pixel Code -->
-    <script>
-        ! function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window,
-            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '158848707793254'); // Insert your pixel ID here.
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=158848707793254&ev=PageView&noscript=1" /></noscript>
-    <!-- DO NOT MODIFY -->
-    <!-- End Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '158848707793254'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=158848707793254&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
 
 </head>
 
@@ -357,7 +347,7 @@
                                         <input type="text" name="b_776f61be2f60bcf617d7a2f0a_23139f1b7c" tabindex="-1" value="">
                                     </div>
                                     <div class="clear">
-                                        <input type="submit" value="Remind Me" name="subscribe" id="remindMe mc-embedded-subscribe" class="button">
+                                        <input type="submit" value="Remind Me" name="subscribe" onclick="pixelTrack()"id="remindMe mc-embedded-subscribe" class="button">
                                         
 
                                     </div>
@@ -386,9 +376,10 @@
     <!-- The below method uses jQuery, but that is not required -->
     <!-- Add event to the button's click handler -->
     <script type="text/javascript">
-        $('#remindMe').click(function () {
-            fbq('track', 'remindMe');
-        });
+        function pixelTrack(){
+            fbq('track', 'CompleteRegistration');
+            console.log('reminded');
+        };
     </script>
 
 </body>
