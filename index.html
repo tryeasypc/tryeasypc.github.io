@@ -377,8 +377,15 @@ src="https://www.facebook.com/tr?id=158848707793254&ev=PageView&noscript=1"
     <!-- Add event to the button's click handler -->
     <script type="text/javascript">
         function pixelTrack(){
+
             fbq('track', 'CompleteRegistration');
             console.log('reminded');
+            ga('send', {
+              hitType: 'event',
+              eventCategory: 'Button',
+              eventAction: 'remindme',
+              eventLabel: 'Remind Me'
+            });
         };
     </script>
 
