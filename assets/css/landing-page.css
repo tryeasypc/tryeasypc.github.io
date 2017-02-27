@@ -1713,3 +1713,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
 #remindMe{
     background-color: green!important;
 }
+
+.disclaimer {
+    font-size:11px;
+    font-style: italic;
+    
+}
