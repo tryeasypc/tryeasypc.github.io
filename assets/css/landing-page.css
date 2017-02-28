@@ -1719,3 +1719,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     font-style: italic;
     
 }
+
+.buttons#indo {
+    margin-top: 0!important;
+}
