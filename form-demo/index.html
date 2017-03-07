@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>EasyPC Form</title>
+
+
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/css/bootstrap-slider.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether-theme-basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <form onkeypress="return event.keyCode != 13;" action="https://formspree.io/prama13@gmail.com" method="post">
+        <div class="container">
+            <label for="app[]">Aplikasi yang ingin dijalankan</label>
+            <div class="row">
+                <div class="form-group form-group-options col-xs-112 col-sm-8 col-md-4">
+                    <div class="input-group input-group-option col-xs-12">
+                        <input type="text" name="app[]" class="form-control banyak" placeholder="Ketik nama aplikasi">
+                        <span class="input-group-addon input-group-addon-remove">
+    				<span class="fa fa-close"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <label for="game[]">Game yang ingin dijalankan</label>
+            <div class="row">
+                <div class="form-group form-group-options col-xs-112 col-sm-8 col-md-4">
+                    <div class="input-group input-group-option col-xs-12">
+                        <input type="text" name="game[]" class="form-control banyak" placeholder="Ketik nama game">
+                        <span class="input-group-addon input-group-addon-remove">
+    				<span class="fa fa-close"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <label for="harga">Budget kamu:</label>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <b>Rp 1 jt</b>
+                    <input name="harga" id="ex2" class="slider" type="text" class="span2" value="" data-slider-min="1" data-slider-max="25" data-slider-step="1" data-slider-value="8" /> <b>Rp 25 jt</b>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="nama">Nama anda</label>
+                    <input required type="text" name="nama" class="form-control">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label class="form-label" for="email">Email anda</label>
+                    <input required type="email" name="email" class="form-control">
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-lg btn-success">Minta Resep</button>
+        </div>
+    </form>
+
+    <!--
+<div class="container">
+    <h3>Selects</h3>
+    <div class="row">
+        <div class="form-group form-group-multiple-selects col-xs-11 col-sm-8 col-md-4">
+    		<div class="input-group input-group-multiple-select col-xs-12">
+                <select class="form-control" name="values[]">
+                    <option value="">Select one</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+    			<span class="input-group-addon input-group-addon-remove">
+    				<span class="fa fa-close"></span>
+    			</span>
+    		</div>
+    	</div>
+    </div>
+</div>
+-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/bootstrap-slider.js"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
