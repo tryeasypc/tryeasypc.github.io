@@ -43,3 +43,31 @@ div.input-group-multiple-select span.input-group-addon-remove{
 div.input-group-multiple-select{
     margin-bottom: 5px;
 }
+.budget-range .label-left {
+    position: absolute!important;
+    margin-top: 20px!important;
+}
+
+.budget-range .label-right {
+    position: absolute!important;
+    right:0;
+}
+.budget-range .slider.slider-horizontal {
+    width: 100% !important;
+}
+
+.budget-range .slider-handle {
+    background: darkgreen;
+}
+
+.budget-range .slider-selection {
+    background-color: seagreen;
+}
+
+.budget-range{
+    margin-bottom: 50px;
+}
+
+.budget-range .control-label {
+ margin-bottom: 30px;   
+}

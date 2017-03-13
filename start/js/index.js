@@ -4,7 +4,8 @@
 
 // Instantiate a slider
 var mySlider = $("input.slider").bootstrapSlider({
-    tooltip: 'always'
+    tooltip: 'always',
+    focus:'true'
 });
 
 
